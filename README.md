@@ -23,17 +23,6 @@ AI coding tools are bad at visual design when working from text alone. They gues
 4. **Export the project** — download the Stitch project (the mockup) as a Vite app using AI Studio
 5. **Point Claude to it** — give Claude the path to the exported files and watch the magic happen — it reads the screenshots, extracts exact values from the code, and translates everything into your project's stack
 
-## What Stitch Gives You
-
-When the user exports from Stitch, you get:
-
-- **`screen.png`** — Visual target (Claude reads this as an image)
-- **`src/App.tsx`** — Full React components with exact Tailwind classes
-- **`src/index.css`** — Design tokens, glass panel definitions, font imports
-- **`code.html`** — Flat HTML per screen (secondary reference)
-
-Claude extracts exact hex colors, rem values, shadow definitions, blur amounts, and layout grids from the code — then maps them to your project's CSS approach.
-
 ## Installation
 
 ```bash
