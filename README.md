@@ -6,6 +6,15 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill that enfor
 
 AI coding tools are bad at visual design when working from text alone. They guess at layouts, colors, and spacing — producing generic-looking interfaces. This skill fixes that by making a validated visual reference the source of truth before any code is written.
 
+## Prerequisites
+
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
+- [Google Stitch MCP](https://stitch.withgoogle.com) — generates mockup screens and design systems
+
+**Optional:**
+- [21st.dev MCP](https://21st.dev) — component inspiration and interaction patterns
+- [ui-ux-pro-max](https://github.com/uxui-pro-max/ui-ux-pro-max) — generates design system recommendations to feed into Stitch
+
 ## How It Works
 
 1. **Claude reads your app** — analyzes your current codebase, design system, and user requirements
@@ -24,15 +33,6 @@ When the user exports from Stitch, you get:
 - **`code.html`** — Flat HTML per screen (secondary reference)
 
 Claude extracts exact hex colors, rem values, shadow definitions, blur amounts, and layout grids from the code — then maps them to your project's CSS approach.
-
-## Prerequisites
-
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
-- [Google Stitch MCP](https://stitch.withgoogle.com) — generates mockup screens and design systems
-
-**Optional:**
-- [21st.dev MCP](https://21st.dev) — component inspiration and interaction patterns
-- [ui-ux-pro-max](https://github.com/uxui-pro-max/ui-ux-pro-max) — generates design system recommendations to feed into Stitch
 
 ## Installation
 
